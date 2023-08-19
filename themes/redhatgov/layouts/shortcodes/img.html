@@ -1,4 +1,4 @@
-<!-- image -->
+<!-- Image -->
 <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
     {{ with .Get "link"}}<a href="{{.}}">{{ end }}
         <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
@@ -15,4 +15,4 @@
     </figcaption>
     {{ end }}
 </figure>
-<!-- image -->
+<!-- Image -->
